@@ -1,0 +1,7 @@
+jupyterlab
+pandas
+scikit-learn
+matplotlib
+seaborn
+requests
+plotly
