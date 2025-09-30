@@ -37,7 +37,8 @@ def main():
     notebooks = [
         os.path.join("notebooks", "1_-_Analyse_Exploratoire.ipynb"),
         os.path.join("notebooks", "2_-_Feature_Engineering.ipynb"),
-        os.path.join("notebooks", "3_-_Modelisation.ipynb")
+        os.path.join("notebooks", "3_-_Modelisation.ipynb"),
+        os.path.join("notebooks", "4_-_Presentation_des_Resultats.ipynb")
     ]
 
     print("\n>>> Step 2: Executing Jupyter notebooks <<<")
