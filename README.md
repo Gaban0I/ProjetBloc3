@@ -16,10 +16,12 @@ Le projet est organisé de la manière suivante :
 ├── notebooks/           # Contient les notebooks Jupyter pour l'analyse et la modélisation
 │   ├── 1_-_Analyse_Exploratoire.ipynb
 │   ├── 2_-_Feature_Engineering.ipynb
-│   └── 3_-_Modelisation.ipynb
+│   ├── 3_-_Modelisation.ipynb
+│   └── 4_-_Presentation_des_Resultats.ipynb
 ├── src/                 # Contient les scripts Python
 │   └── prepare_data.py
 ├── run_pipeline.py      # Script pour exécuter l'ensemble du pipeline
+├── requirements.txt     # Liste des dépendances du projet
 └── README.md            # Ce fichier
 ```
 
@@ -28,7 +30,7 @@ Le projet est organisé de la manière suivante :
 Pour exécuter ce projet, vous devez avoir Python 3 installé. Ensuite, installez les bibliothèques nécessaires via pip :
 
 ```bash
-pip install jupyterlab pandas scikit-learn matplotlib seaborn requests
+pip install -r requirements.txt
 ```
 
 ## 4. Utilisation
@@ -62,6 +64,7 @@ Si vous préférez exécuter chaque étape manuellement :
     *   `notebooks/1_-_Analyse_Exploratoire.ipynb`
     *   `notebooks/2_-_Feature_Engineering.ipynb`
     *   `notebooks/3_-_Modelisation.ipynb`
+    *   `notebooks/4_-_Presentation_des_Resultats.ipynb`
 
 ## 5. Étapes du Projet et Documentation
 
@@ -79,6 +82,9 @@ La documentation détaillée de chaque étape se trouve directement dans les not
 *   **Étape 4 : Modélisation et Évaluation (`notebooks/3_-_Modelisation.ipynb`)**
     *   Ce notebook est le cœur du projet. Il entraîne plusieurs modèles (Régression Logistique, Arbre de Décision, Forêt Aléatoire), compare leurs performances, et procède à une optimisation des hyperparamètres du meilleur modèle (Random Forest) via `GridSearchCV`.
     *   Enfin, il évalue le modèle final sur le jeu de test et analyse l'importance des différentes caractéristiques pour prédire le churn.
+
+*   **Étape 5 : Présentation des Résultats (`notebooks/4_-_Presentation_des_Resultats.ipynb`)**
+    *   Ce notebook présente les performances du modèle final, les facteurs clés de churn identifiés et des recommandations stratégiques basées sur l'analyse.
 
 ## 6. Conclusion
 
